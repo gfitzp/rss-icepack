@@ -1,0 +1,5 @@
+CREATE TABLE feed_days (
+    id INT(11) UNSIGNED PRIMARY KEY,
+    days INT,
+    FOREIGN KEY (id) REFERENCES fever_db.fever_feeds(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
